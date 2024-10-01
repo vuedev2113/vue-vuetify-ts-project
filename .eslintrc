@@ -1,0 +1,25 @@
+{
+	"root": true,
+	"parser": "vue-eslint-parser",
+	"parserOptions": {
+		"parser": "@typescript-eslint/parser"
+	},
+	"env": {
+		"browser": true,
+		"amd": true,
+		"node": true
+	},
+	"extends": [
+		"./.eslintrc-auto-import.json",
+		"plugin:vue/recommended",
+		"eslint:recommended",
+		"@vue/typescript/recommended",
+		"prettier"
+	],
+	"plugins": ["@typescript-eslint", "prettier"],
+	"rules": {
+		"prettier/prettier": "error",
+		// not needed for vue 3
+		"vue/no-multiple-template-root": "off"
+	}
+}

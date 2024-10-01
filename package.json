@@ -1,0 +1,61 @@
+{
+	"name": "ishelter-spa-v3",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vue-tsc && vite build",
+		"preview": "vite preview",
+		"format": "prettier --write .",
+		"lint": "eslint src --ext .ts,.vue",
+		"test": "vitest run",
+		"coverage": "vitest run --coverage",
+		"prepare": "husky install"
+	},
+	"ts-standard": {
+		"project": "./tsconfig.json",
+		"ignore": [
+			"dist",
+			"src/**/*.js"
+		]
+	},
+	"dependencies": {
+		"pinia": "^2.0.33",
+		"vue": "^3.2.45",
+		"vue-query": "^1.26.0",
+		"vue-router": "^4.1.6",
+		"vuetify": "^3.1.8"
+	},
+	"devDependencies": {
+		"@mdi/font": "^7.1.96",
+		"@testing-library/vue": "^6.6.1",
+		"@typescript-eslint/eslint-plugin": "^5.54.1",
+		"@typescript-eslint/parser": "^5.54.1",
+		"@vitejs/plugin-vue": "^4.0.0",
+		"@vue/eslint-config-typescript": "^11.0.2",
+		"autoprefixer": "^10.4.14",
+		"eslint": "^8.36.0",
+		"eslint-config-prettier": "^8.7.0",
+		"eslint-config-standard-with-typescript": "^34.0.0",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-n": "^15.6.1",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-promise": "^6.1.1",
+		"eslint-plugin-vue": "^9.9.0",
+		"happy-dom": "^8.9.0",
+		"husky": "^8.0.0",
+		"postcss": "^8.4.21",
+		"prettier": "2.8.4",
+		"sass": "^1.59.2",
+		"tailwindcss": "^3.2.7",
+		"ts-standard": "^12.0.2",
+		"typescript": "^4.9.5",
+		"unplugin-auto-import": "^0.15.1",
+		"unplugin-vue-components": "^0.24.1",
+		"vite": "^4.1.0",
+		"vitest": "^0.29.2",
+		"vue-eslint-parser": "^9.1.0",
+		"vue-tsc": "^1.0.24"
+	}
+}
