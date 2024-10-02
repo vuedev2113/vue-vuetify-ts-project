@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="w-[75vw] mx-auto h-screen flex flex-col justify-center items-center"
+		class="lg:w-[75vw] mx-auto w-full h-full flex flex-col justify-center items-center"
 	>
 		<div class="grid grid-cols-4 gap-20 p-5 text-center justify-center">
 			<div class="mx-auto flex flex-col gap-5 text-sky-300">
