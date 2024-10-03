@@ -9,26 +9,43 @@ const routes: RouteRecordRaw[] = [
 			{
 				path: '',
 				name: 'Home',
+				redirect: "dashboard"
+			},
+			{
+				path: 'dashboard',
+				name: 'Dashboard',
 				component: () =>
 					import(/* webpackChunkName: "home" */ '@/views/home/HomeView.vue'),
 			},
 			{
-				path: '/about',
+				path: 'about',
 				name: 'About',
 				component: () =>
 					import(/* webpackChunkName: "home" */ '@/views/about/AboutView.vue'),
 			},
 			{
-				path: '/todo',
+				path: 'todo',
 				name: 'Todo',
 				component: () =>
-					import(/* webpackChunkName: "home" */ '@/views/todo/TodoView.vue'),
+					import(/* webpackChunkName: "home" */ "@/views/todo/TodoListView.vue")
 			},
 			{
-				path: '/calender',
+				path: 'calender',
 				name: 'Calender',
 				component: () =>
 					import(/* webpackChunkName: "home" */ '@/views/calender/CalenderView.vue'),
+			},
+			{
+				path: 'reports',
+				name: 'Reports',
+				component: () =>
+					import(/* webpackChunkName: "home" */ '@/views/reports/ReportsView.vue'),
+			},
+			{
+				path: 'setting',
+				name: 'Setting',
+				component: () =>
+					import(/* webpackChunkName: "home" */ '@/views/setting/SettingView.vue'),
 			},
 		],
 	},
